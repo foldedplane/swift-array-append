@@ -47,16 +47,28 @@
                                     <action selector="arrayArrayAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="noj-Sy-bkv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9l-4k-4Vs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Dictionary/BatchArray Append"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="96" y="291" width="208" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="dictionaryBatchArrayAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0H-am-lnS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="APa-dk-QS3"/>
+                                <exclude reference="o9l-4k-4Vs"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="APa-dk-QS3"/>
+                                <include reference="o9l-4k-4Vs"/>
                             </mask>
                         </variation>
                     </view>

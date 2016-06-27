@@ -74,6 +74,20 @@ struct Kruskal {
         
     }
 
+    mutating func dictionaryBatchArrayAppend() {
+        
+        // First set an empty array
+        tileMapping[0] = []
+        
+        // Now append to it 50,000 times
+        var batchArray:[MazePoint] = []
+        for _ in 0..<50_000 {
+            batchArray.append(MazePoint(x:1, y:1))
+        }
+        tileMapping[0]?.appendContentsOf(batchArray)
+        
+    }
+
     
 }
 

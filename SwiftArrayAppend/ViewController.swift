@@ -49,5 +49,13 @@ class ViewController: UIViewController {
         print ("Array/Array append took \(-elapsed)")
     }
     
+    @IBAction func dictionaryBatchArrayAppend(sender: AnyObject) {
+        
+        let startTime = NSDate()
+        kruskal.dictionaryBatchArrayAppend()
+        let elapsed = startTime.timeIntervalSinceNow
+        print ("Dictionary/BatchArray append took \(-elapsed)")
+
+    }
 }
 
